@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:say_no_waste/screens/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,10 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/':(context)=>SplashScreen(), //Set Splash Screen as the initial route
+      },
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainScreen(),
     );
   }
 }
@@ -21,10 +25,19 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('App Name'),
+        title: const Text('SayNoWaste',
+        ),
       ),
       body: const Center(
-        child: Text('This is a sample Text widget'),
+        child: Text(
+          'This is a sample Text widget',
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Poppins',
+              fontSize: 30,
+              letterSpacing: 4,
+              color: Colors.orange),
+        ),
       ),
     );
   }
