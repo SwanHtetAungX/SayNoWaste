@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:say_no_waste/screens/sign_up_screen.dart';
 import 'package:say_no_waste/screens/splash_screen.dart';
 
 void main() {
@@ -11,11 +12,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        '/':(context)=>SplashScreen(), //Set Splash Screen as the initial route
+        '/':(context)=>SplashScreen(),
+        SignUpScreen.routeName:(_){return SignUpScreen();} //Set Splash Screen as the initial route
       },
       theme: ThemeData(
+        
         primarySwatch: Colors.blue,
       ),
+      
     );
   }
 }

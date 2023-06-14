@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:say_no_waste/screens/sign_up_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   @override
@@ -6,7 +7,7 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF1A202C),
       body: Container(
-        padding: const EdgeInsets.all(40),
+        padding: const EdgeInsets.all(50),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -18,9 +19,9 @@ class SplashScreen extends StatelessWidget {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFFFF725C),
-                fixedSize: const Size(321, 65),
+                minimumSize: const Size(321, 65),
                 shape: const StadiumBorder()),
-              onPressed: () {
+              onPressed: () {Navigator.of(context).pushReplacementNamed(SignUpScreen.routeName);
                 // Sign Up button logic
               },
               child: const Text(
@@ -33,7 +34,7 @@ class SplashScreen extends StatelessWidget {
               style: ElevatedButton.styleFrom(
               backgroundColor: const Color(0xFF1A202C),
               side: const BorderSide(width: 1, color: Color(0xFFFF725C)),
-              fixedSize: const Size(321, 65),
+              minimumSize: const Size(321, 65),
               shape: const StadiumBorder()),
               onPressed: () {
                 // Sign In button logic
