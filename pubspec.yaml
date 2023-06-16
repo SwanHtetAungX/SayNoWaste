@@ -26,4 +26,6 @@ flutter:
   assets:
     - images/splash.png
     - images/google.png
+    - images/bin.png
+    - images/sign-up-bg.png
   

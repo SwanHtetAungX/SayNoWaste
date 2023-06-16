@@ -33,7 +33,7 @@ class MyTextField extends StatelessWidget {
               label,
               style: const TextStyle(
                 color: Color(0xFFFF725C),
-                fontSize: 20.0,
+                fontSize: 15.0,
                 fontFamily: 'Poppins'
               ),
             ),
