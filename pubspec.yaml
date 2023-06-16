@@ -25,4 +25,5 @@ flutter:
           weight: 700
   assets:
     - images/splash.png
+    - images/google.png
   
