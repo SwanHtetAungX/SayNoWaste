@@ -1,5 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:say_no_waste/screens/add_food_items_screen.dart';
+import 'package:say_no_waste/screens/food_items_list_screen.dart';
 import 'package:say_no_waste/screens/sign_up_screen.dart';
 import 'package:say_no_waste/widgets/my_button.dart';
 import 'package:say_no_waste/widgets/my_textfield.dart';
@@ -75,7 +77,7 @@ class LoginScreen extends StatelessWidget {
                   label: 'Login',
                   onPressed: () {
                     Navigator.of(context)
-                        .pushReplacementNamed(SignUpScreen.routeName);
+                        .pushReplacementNamed(FoodItemsListScreen.routeName);
                   },
                 ),
               ),
